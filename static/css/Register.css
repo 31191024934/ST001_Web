@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contain{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(39, 27, 38, 0.7) 10%, rgba(0,0,0,0.6) 60%),url(../img/login.jpg);
+}
+@media (max-width: 535px){
+    .contain{
+        height: 100%;
+    }
+}
+.content__header__logo {
+    /* Rectangle 5 */
+    width: 150px;
+    height: 53px;
+    margin-top: 20px;
+    margin-left:40px;
+}
+
+.content__header__home {
+    /* Home */
+    float: right;
+    margin: 30px 20px 0 0;
+    font-family: Segoe Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: wheat;
+    text-decoration: none;
+    /* border: 2px solid #000000; */
+}
+
+.register-form__welcome{
+    color: #fa95ae;
+    padding: 10px 0 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-main__input{
+    margin-left: 25%;
+}
+@media (max-width: 540px){
+    .content-main__input{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 280px){
+    .content__header__logo{
+        display: none;
+    }
+    .content__header__home{
+        margin-bottom: 15px;
+    }
+}
+.form-main__yourname,
+.form-main__username,
+.form-main__email,
+.form-main__password,
+.form-main__createpassword{
+    border: 1.5px solid #fa95ae;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 35px;
+    background-color: #ffffff9f;
+}
+
+.input-password{
+    padding: 0 10px;
+}
+
+.form-main__password{
+    width: 45%;
+    margin-right: 8%;
+}
+.form-main__createpassword{
+    width: 45%;
+}
+.form-main__newto{
+    color: rgb(146, 146, 146);
+    font-weight: bolder;
+    margin-left: 12px;
+}
+.form-main__hr{
+    color: #fa95ae;
+}
+
+.register-form__btn--register{
+    border: 2px solid #f6a5b9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0px 40px;
+    background-color: rgba(155, 39, 176, 0);
+    color: white;
+    height: 35px;
+}
+.register-form__btn--register:hover{
+    background-color: #f6a5b9;
+    transition: .3s;
+}

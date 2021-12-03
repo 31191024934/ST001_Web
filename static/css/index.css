@@ -1,0 +1,561 @@
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #f6a5b9;
+    --size-12: 12px;
+    --size-14: 14px;
+    --size-18: 18px;
+    --weight-600: 600;
+    --weight-700: 700;
+    --seperate-color: #cbcbcb;
+}
+
+::selection {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+
+/* -------------------------------- */
+
+body {
+    box-sizing: border-box;
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 29px;
+}
+
+.fw-medium {
+    font-family: "Montserrat Medium";
+}
+
+.fw-bold {
+    font-family: "Montserrat Bold";
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-10 {
+    margin-top: 10px;
+}
+
+.container {
+    padding: 10px 30px 24px;
+}
+
+.header {
+    font-family: var(--font-lato);
+    font-size: var(--size-14);
+    font-weight: var(--weight-600);
+    position: relative;
+    padding: 60px 0px 35px 0px;
+}
+
+.icon-btn {
+    border: none;
+    background: none;
+}
+
+.first-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.primary-btn {
+    background: var(--primary-color) !important;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 99px;
+    transition: 0.3s all ease;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: #fff;
+}
+
+.primary-btn:hover a {
+    color: #fff;
+}
+
+.primary-btn:hover {
+    color: #fff;
+}
+
+.primary-btn a {
+    color: #fff;
+}
+
+.secondary-btn {
+    background: var(--secondary-color) !important;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 99px;
+    transition: 0.3s all ease;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color) !important;
+    border-color: #fff;
+}
+
+.secondary-btn:hover a {
+    color: #fff;
+}
+
+.secondary-btn a {
+    color: #fff;
+}
+
+.link-account {
+    text-decoration: none;
+}
+
+.link-account:last-child {
+    padding-right: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 200px;
+    height: 75px;
+}
+
+.search-input {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 130px;
+    height: 27px;
+    outline: none;
+    border-radius: 99px;
+    font-size: var(--size-14);
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+}
+
+.search-icon {
+    color: #000;
+    text-decoration: none;
+}
+
+.search-icon:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+#backTopBtn {
+    opacity: 0;
+    z-index: 1000;
+    transition: 0.3s all ease;
+    position: fixed;
+    bottom: 40px;
+    right: 48px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 999px;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+#backTopBtn:hover {
+    background-color: #555;
+}
+
+
+/* -------------------------------------- */
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: var(--font-lato);
+    height: 60px;
+}
+
+.nav-list li {
+    list-style: none;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 34px;
+}
+
+@media (max-width: 1024px) {
+    .nav-list li {
+        list-style: none;
+        display: inline-block;
+        line-height: 60px;
+        padding: 0 14px;
+    }
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: var(--weight-700);
+}
+
+.nav-list li .active,
+.collapse-nav li .active {
+    color: var(--primary-color);
+}
+
+.bags-shop img {
+    width: 21px;
+}
+
+.quantity-goods {
+    display: flex;
+    margin: 0;
+    border: 1px solid #000;
+    width: 25px;
+    height: 25px;
+    border-radius: 99px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: var(--size-12);
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+}
+
+.raleway {
+    font-family: var(--font-raleway);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.nav-list li:hover,
+li a:hover {
+    color: var(--secondary-color) !important;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .nav-list li {
+        padding: 0px 16px !important;
+    }
+}
+
+.nav-collapse-btn {
+    color: #000;
+}
+
+.nav-collapse-btn .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #888;
+}
+
+.nav-collapse-btn:focus,
+.nav-collapse-btn:hover,
+.nav-collapse-btn:active {
+    box-shadow: none;
+}
+
+.collapse-nav li {
+    margin: 5px 0;
+    padding: 10px 15px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* ------------------------- */
+
+.necess-infos {
+    padding: 50px 0 34px 0;
+    font-family: var(--font-lato);
+    font-size: var(--size-14);
+}
+
+.expain {
+    line-height: 2;
+    word-spacing: 1px;
+}
+
+.necess-links {
+    width: 100%;
+}
+
+.necess-links a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    word-spacing: 1px;
+}
+
+.necess-links a:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ----------------------- */
+
+.copyright {
+    font-family: var(--font-lato);
+    font-size: var(--size-14);
+    font-weight: var(--weight-600);
+    padding-top: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    word-spacing: 2px;
+}
+
+footer {
+    font-size: 14px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 36px;
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.section-gap-t {
+    padding-top: 90px;
+}
+
+.section-gap-b {
+    padding-bottom: 90px;
+}
+
+.seperate-b {
+    border-bottom: 1px solid var(--seperate-color);
+}
+
+.right-divider {
+    border-right: 1px solid #cbcbcb;
+}
+
+.no-style-btn {
+    border: none;
+    background: none;
+}
+
+.margin-60 {
+    margin: 60px 0px;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.hover-img {
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.hover-img:hover {
+    opacity: 0.9;
+}
+
+.img-hover-zoom img {
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+
+/* override Bootstrap CSS */
+
+.input-group>.form-control,
+.input-group>.input-group-text,
+.form-select {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.carousel-indicators {
+    bottom: -48px;
+}
+
+.carousel-indicators [data-bs-target] {
+    border: 1px solid #000;
+    width: 14px;
+    height: 14px;
+    border-radius: 99px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+}
+
+.carousel-indicators .active {
+    border: 1px solid #fff;
+    background-color: var(--secondary-color);
+}
+
+.carousel-control-prev {
+    left: -81;
+}
+
+.carousel-control-next {
+    right: -81;
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+    .carousel-indicators {
+        bottom: 0;
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: url("../svg/right-chevron.svg");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../svg/left-chevron.svg");
+}

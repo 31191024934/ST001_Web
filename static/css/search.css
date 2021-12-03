@@ -1,0 +1,36 @@
+.jumbotron {
+  padding: 0px 0px 81px 0px;
+  font-size: 30px;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+}
+
+.search-wrapper {
+  padding: 81px 16px;
+}
+
+.search-option-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.option-seperator {
+  border-right: 1px solid #cbcbcb;
+}
+
+@media (max-width: 768px) {
+  .option-seperator {
+    border-right: 1px solid transparent !important;
+  }
+}
+
+.search-title {
+  font-size: 64px;
+  font-family: "Montserrat Medium";
+  margin-bottom: 60px;
+}
+
+#basic-addon2:hover {
+  background-color: #f6a5b9;
+  transition: 0.5s;
+}

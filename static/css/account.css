@@ -1,0 +1,83 @@
+.Account_h2 {
+    color: pink;
+}
+
+.search-box{
+    margin-top: -15px;
+}
+
+.left-top__name {
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+p.left-top__name {
+    color: #080068;
+}
+
+.content {
+    margin: 20px;  
+}
+
+.left-bottom {
+    margin-top: 56px;
+    margin-left: 84px;
+}
+
+.right-title__profile {
+    Font-style: Bold;
+    Font-size: 48px;
+    Line-height: 55px;
+    Line-height: 100%;
+    Align: Left;
+    Vertical-align: Top;
+    Fill: Solid;
+    color: #f7a4b8;
+    padding-left: 15%;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.left-bottom__account {
+    color: #080068;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.left-bottom__file {
+    margin: 0 0 8px 20px;
+    color: #f7a4b8;
+    text-transform: uppercase;
+}
+
+.left-bottom__address {
+    margin: 0 0 10px 20px;
+    color: #f7a4b8;
+    text-transform: uppercase;
+}
+
+.left-bottom__order {
+    color: #080068;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.box2-right{
+    margin-left: 15px;
+}
+
+.login-form__btn--save {
+    border: 2px solid pink;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(155, 39, 176, 0);
+    Font-style: Montserrat Regular;
+    color: #D94F70;
+    max-width: 80px!important;
+}
+.view-link{
+    color: #D94F70;
+}
+.view-link:hover{
+    color: black;
+}
